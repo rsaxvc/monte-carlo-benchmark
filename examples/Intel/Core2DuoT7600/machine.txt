@@ -1,0 +1,1 @@
+This is my current laptop. I turned off X11, and ran with nice -n -19.
