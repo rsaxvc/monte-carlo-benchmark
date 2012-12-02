@@ -15,9 +15,9 @@ return tp.tv_sec + (long double)tp.tv_usec / 1000000;
 }
 
 
-static __inline float dist_from_org( float x, float y )
+static __inline bool pt_in_circle( float x, float y )
 {
-return sqrt( x*x + y*y );
+return ( x*x + y*y ) < 1.0f;
 }
 
 struct thread_control_block
@@ -37,13 +37,13 @@ for( int i = 0; i < tcb->num_points; ++i )
 	{
 	float x = (float)rand_r(&tcb->rand_seed)/(float)RAND_MAX;
 	float y = (float)rand_r(&tcb->rand_seed)/(float)RAND_MAX;
-	if( dist_from_org( x, y ) > 1.0f )
+	if( pt_in_circle( x, y ) )
 		{
-		tcb->in_square++;
+		tcb->in_circle++;
 		}
 	else
 		{
-		tcb->in_circle++;
+		tcb->in_square++;
 		}
 	}
 }
