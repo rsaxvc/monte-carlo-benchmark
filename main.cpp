@@ -116,7 +116,9 @@ nthreads = atoi(args[2]);
 pthread_mutex_init( &lock, NULL );
 #endif
 
+#ifdef DEBUG
 std::cout<<"Approximating the value of PI using "<<count<<" pseudorandomly placed points and "<<nthreads<<" threads"<<std::endl;
+#endif
 
 tcbs = (thread_control_block*)malloc( sizeof( thread_control_block ) * nthreads );
 approx_points_per_thread = count / nthreads;
@@ -158,8 +160,12 @@ free( tcbs );
 pthread_mutex_destroy( &lock );
 #endif
 
+#ifdef DEBUG
 std::cout<<"in circle:"<<in_circle<<" points"<<std::endl;
 std::cout<<"in square:"<<in_square<<" points"<<std::endl;
 std::cout<<"pi approx:"<<4*((float)in_circle)/(in_circle+in_square)<<std::endl;
 std::cout<<"Took "<<work_done_time - start_work_time <<" seconds to process"<<std::endl;
+#else
+std::cout<<work_done_time - start_work_time;
+#endif
 }
