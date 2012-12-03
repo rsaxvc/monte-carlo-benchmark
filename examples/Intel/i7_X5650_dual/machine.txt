@@ -1,1 +1,2 @@
 This is my dual Intel Core i7 X5650. It also hosts a minecraft VM, so the numbers are probably lower than expected, as well as more noisy. It has 12 physical cores and 24 logical cores.
+Linux slic3r 3.2.0-3-amd64 #1 SMP Mon Jul 23 02:45:17 UTC 2012 x86_64 GNU/Linux
