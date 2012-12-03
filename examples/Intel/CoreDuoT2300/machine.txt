@@ -1,0 +1,2 @@
+This is my old laptop(IBM T60). I turned off X11, and ran with nice -n -19.
+Linux craptop 3.2.0-3-686-pae #1 SMP Mon Jul 23 03:50:34 UTC 2012 i686 GNU/Linux
