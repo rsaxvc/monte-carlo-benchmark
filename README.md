@@ -3,5 +3,6 @@ monte-carlo-benchmark
 
 monte-carlo statistics program that tests the scalablilty of certain operations
 
-Run `make -j whatever`
-Next run `make benchmarks -j 1`
+First, run `make -j whatever`
+Next, cease any intensive work on the machine
+Finally, run `make graph.png -j 1`

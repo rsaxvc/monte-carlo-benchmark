@@ -12,6 +12,9 @@ BENCHMARK_FILES=\
 
 all:$(BUILDS)
 
+graph.png: benchmarks
+	./plot_results.sh
+
 benchmarks: $(BENCHMARK_FILES)
 
 main.o: main.cpp
