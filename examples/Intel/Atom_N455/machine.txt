@@ -1,0 +1,18 @@
+Axon's OpenBSD netbook. Benchmark ran with nice=0, X11 was running but we didn't touch it while waiting for it to complete.
+
+`uname -a`
+OpenBSD zodiac.labs.h-i-r.net 5.2 GENERIC.MP#339 i386
+
+`dmesg | grep cpu -i`
+cpu0: Intel(R) Atom(TM) CPU N455 @ 1.66GHz ("GenuineIntel" 686-class) 1.67 GHz
+cpu0: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,SBF,NXE,LONG,SSE3,MWAIT,DS-CPL,EST,TM2,SSSE3,CX16,xTPR,PDCM,MOVBE,LAHF
+cpu0 at mainbus0: apid 0 (boot processor)
+cpu0: apic clock running at 166MHz
+cpu1 at mainbus0: apid 1 (application processor)
+cpu1: Intel(R) Atom(TM) CPU N455 @ 1.66GHz ("GenuineIntel" 686-class) 1.67 GHz
+cpu1: FPU,V86,DE,PSE,TSC,MSR,PAE,MCE,CX8,APIC,SEP,MTRR,PGE,MCA,CMOV,PAT,CFLUSH,DS,ACPI,MMX,FXSR,SSE,SSE2,SS,HTT,TM,SBF,NXE,LONG,SSE3,MWAIT,DS-CPL,EST,TM2,SSSE3,CX16,xTPR,PDCM,MOVBE,LAHF
+acpicpu0 at acpi0: C3, C2, C1, PSS
+acpicpu1 at acpi0: C3, C2, C1, PSS
+cpu0: Enhanced SpeedStep 1663 MHz: speeds: 1667, 1333, 1000 MHz
+
+scripts were updated to reflect the locations of the bash binary
