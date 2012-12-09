@@ -1,0 +1,9 @@
+This was my old 64-bit laptop. 64k L1-ICACHE, 64k L1-DCACHE, 512k L2-CACHE per core.
+
+uname -a
+Linux labtorp 3.2.0-3-amd64 #1 SMP Thu Jun 28 09:07:26 UTC 2012 x86_64 GNU/Linux
+
+dmesg | grep thing I cared about
+[    0.000000] SMP: Allowing 2 CPUs, 0 hotplug CPUs
+[    0.064518] CPU0: AMD Turion(tm) Neo X2 Dual Core Processor L625 stepping 02
+[    0.152162] Brought up 2 CPUs
