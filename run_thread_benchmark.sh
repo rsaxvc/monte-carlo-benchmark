@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 EXPECTED_ARGS=2
 E_BADARGS=65
 if [ $# -ne $EXPECTED_ARGS ]

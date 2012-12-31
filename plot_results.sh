@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 TEMP="$(mktemp)"
 rm -f $TEMP
 echo "set terminal pngcairo" >> $TEMP
