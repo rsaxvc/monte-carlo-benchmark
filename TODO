@@ -1,0 +1,18 @@
+Version2:
+	Counting from 1 to 100 threads doesn't seem terribly useful above 10
+	powers of 2:[1 to 128] should work fine.
+
+	Each test needs to be run multiple times, with min/avg/max recorded
+
+	Should also record
+		userspace time vs kernel time
+		context switches
+
+	The local-thread-storage vs thread-storage names are misleading.
+
+	Need more automated logging of:
+		uname -a
+		cat /proc/cpuinfo or equivalent
+		compiler version
+		pthreads version
+		clibrary version
