@@ -1,4 +1,6 @@
 Version2:
+	Use better PRNG
+
 	Counting from 1 to 100 threads doesn't seem terribly useful above 10
 	powers of 2:[1 to 128] should work fine.
 
