@@ -1,4 +1,0 @@
-This is a Sparc Classic with 50MHz CPU. It has no atomic instructions that can
-be used for my needs, so that test is not included. It is also quite slow.
-OpenBSD sparky 5.1 GENERIC#36 sparc
-

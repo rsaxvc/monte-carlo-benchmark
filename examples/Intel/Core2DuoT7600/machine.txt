@@ -1,2 +1,0 @@
-This is my current laptop. I turned off X11, and ran with nice -n -19.
-Linux slashtop 3.2.0-3-amd64 #1 SMP Mon Jul 23 02:45:17 UTC 2012 x86_64 GNU/Linux
