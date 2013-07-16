@@ -1,7 +1,7 @@
 CXX=g++
 CXXFLAGS=-march=native -O3 -g
 CC=$(CXX)
-LDFLAGS=-lpthread
+LDFLAGS=-lpthread -lrt
 BUILDS=bench
 NUM_POINTS=1000000
 SOURCE=*.cpp

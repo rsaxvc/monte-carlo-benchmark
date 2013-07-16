@@ -9,12 +9,12 @@ fi
 
 count=$2
 csv_file="mc_$1_$count.csv"
-program="mc_$1"
+program="bench"
 rm -f $csv_file
 for i in {1..100}
 do
 	echo    ""  >> $csv_file
 	echo -n  $i >> $csv_file
 	echo -n "," >> $csv_file
-	./$program $count $i >> $csv_file
+	./$program $1 $count $i >> $csv_file
 done

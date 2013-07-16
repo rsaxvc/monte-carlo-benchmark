@@ -8,6 +8,22 @@
 #include "bench_local.hpp"
 #include "bench_shared.hpp"
 
+
+#include <time.h>
+static double my_time( void )
+{
+struct timespec tp;
+if( 0 == clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &tp) )
+	{
+	return tp.tv_sec + (double)tp.tv_nsec / 1000000000.0;
+	}
+else
+	{
+	std::cerr<<"Error reading current time"<<std::endl;
+	return 0;
+	}
+}
+
 int main( int numArgs, const char * args[] )
 {
 size_t count;
@@ -50,10 +66,12 @@ nthreads = atoi(args[3]);
 
 std::cerr<<"Approximating the value of PI using "<<count<<" pseudorandomly placed points and "<<nthreads<<" threads"<<std::endl;
 
+double time_start = my_time();
 b->run( count, nthreads );
+double time_end = my_time();
 
+std::cout<<(time_end-time_start);
 std::cerr<<"pi approx:"<< b->result() <<std::endl;
-
 delete b;
 
 //std::cerr<<"in circle:"<<in_circle<<" points"<<std::endl;
