@@ -1,5 +1,11 @@
 Version2:
 	Use better PRNG
+		Don't use BBS - skews results if int-divide instruction available.
+		Take in current state as argument, return next state, like raw BBS.
+		Inline-able.
+
+	Do all math with integers
+		Current benchmark performs very differently if FPU enabled or not.
 
 	Counting from 1 to 100 threads doesn't seem terribly useful above 10
 	powers of 2:[1 to 128] should work fine.
